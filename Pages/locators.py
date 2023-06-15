@@ -19,7 +19,7 @@ class ProductPageLocators():
 #Кнопка добавить в корзину
     BTN_ADD_TO_BASKET = (By.CSS_SELECTOR, "button.btn-add-to-basket")
 #Alert о добавлении товара в корзину
-    MESSAGE_ABOUT_ADDING = (By.CSS_SELECTOR, "div.alertinner ")
+    MESSAGE_ABOUT_ADDING = (By.CSS_SELECTOR, "div.alertinner > strong")
 #Название товара
     PRODUCT_TITTLE = (By.CSS_SELECTOR, "div.product_main h1")
 #Сумма в корзине
@@ -27,4 +27,6 @@ class ProductPageLocators():
 #Цена товара
     PRODUCT_PRICE = (By.CSS_SELECTOR, ".product_main .price_color")
 
-
+class BasePageLocators():
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
