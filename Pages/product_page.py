@@ -1,8 +1,5 @@
 import math
 from selenium.common.exceptions import NoAlertPresentException
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
-
 from .Base_page import BasePage
 from .locators import ProductPageLocators
 
