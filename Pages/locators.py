@@ -1,4 +1,5 @@
 from selenium.webdriver.common.by import By
+
 class MainPageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
 
@@ -40,5 +41,5 @@ class BasePageLocators():
     USER_ICON = (By.CSS_SELECTOR, ".icon-user")
 
 class BasketLocators():
-    BASKET_IS_EMPTY = (By.CSS_SELECTOR, "#content_inner a")
+    BASKET_EMPTY_TEXT = (By.CSS_SELECTOR, "#content_inner a")
     BASKET_EMPTY_PRODUCT = (By.CSS_SELECTOR, ".carousel")
